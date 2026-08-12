@@ -11,7 +11,10 @@ devtech/
 ├── RH/             # Documentos e arquivos relacionados a Recursos Humanos
 ├── financeiro/     # Arquivos e relatórios do setor Financeiro
 ├── projetos/       # Gestão e acompanhamento de Projetos
-└── devtech.sh      # Script principal de automação do ambiente
+└── docs/           # Documentos contendo contratos e manuais
+
+
+devtech.sh      # Script principal de automação do ambiente
 
 ---
 
