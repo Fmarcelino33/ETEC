@@ -21,5 +21,5 @@ devtech.sh      # Script principal de automação do ambiente
 🚀 Como Executar o Script
 
 Para executar o script de automação devtech.sh no seu ambiente Linux/Bash, siga os passos abaixo:
-1. Conceda permissão de execução:Bashchmod +x devtech.sh
-2. Execute o script:Bash./devtech.sh
+1. Conceda permissão de execução:Bash: chmod +x devtech.sh
+2. Execute o script:Bash: ./devtech.sh
