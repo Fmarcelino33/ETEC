@@ -1,8 +1,17 @@
-# Estrutura do Projeto PTIC
+# 📚 Exercícios de Programação Web (PW)
 
-Este diretório contém arquivos dos exercicios da ETEC
+Este repositório contém as atividades, desafios e listas de exercícios desenvolvidos durante as aulas de Programação Web.
 
 ---
-Todos os arquivos são exercicios listados pelo professor
 
-Exercicios de HTML
+## 📁 Estrutura de Pastas
+
+Os exercícios estão organizados em pastas numeradas de acordo com as listas e aulas ministradas:
+
+```text
+.
+├── lista-1/          # Exercícios da Lista 1
+├── lista-2/          # Exercícios da Lista 2
+├── lista-3/          # Exercícios da Lista 3
+├── lista-4/          # Exercícios da Lista 4
+└── ...               # Próximas listas e atividades
