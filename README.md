@@ -10,6 +10,7 @@ Os exercícios estão organizados em pastas numeradas de acordo com as listas e 
 
 ```text
 .
+├── devtech/          # Aula – Terminal e Linha de Comando (CLI)
 ├── lista-1/          # Exercícios da Lista 1
 ├── lista-2/          # Exercícios da Lista 2
 ├── lista-3/          # Exercícios da Lista 3
