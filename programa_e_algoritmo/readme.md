@@ -1,4 +1,5 @@
 📘 Apresentação — Lógica de Programação (Fluxograma + JavaScript)
+
 Este material tem como finalidade introduzir os conceitos básicos de Lógica de Programação, desenvolvendo a capacidade de analisar problemas e construir soluções passo a passo.
 
 Durante as atividades, o foco será:
