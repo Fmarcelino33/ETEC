@@ -1,4 +1,4 @@
-//EXERCICIO #7
+/*EXERCICIO #7
 let input = require ("readline-sync");
 let n1 = input.questionInt("Digite um numero: ");
 let result1 = n1 * 1
@@ -20,7 +20,22 @@ console.log("A resposta é: ", result6);
 console.log("A resposta é: ", result7);
 console.log("A resposta é: ", result8);
 console.log("A resposta é: ", result9);
-console.log("A resposta é: ", result10);
+console.log("A resposta é: ", result10);*/
+
+//VERSÃO COM TEMPLATE STRING
+let input = require("readline-sync");
+let n1 = input.questionInt("Digite um numero: ");
+
+console.log(`${n1} x 1 = ${n1 * 1}`);
+console.log(`${n1} x 2 = ${n1 * 2}`);
+console.log(`${n1} x 3 = ${n1 * 3}`);
+console.log(`${n1} x 4 = ${n1 * 4}`);
+console.log(`${n1} x 5 = ${n1 * 5}`);
+console.log(`${n1} x 6 = ${n1 * 6}`);
+console.log(`${n1} x 7 = ${n1 * 7}`);
+console.log(`${n1} x 8 = ${n1 * 8}`);
+console.log(`${n1} x 9 = ${n1 * 9}`);
+console.log(`${n1} x 10 = ${n1 * 10}`);
 
 
 
