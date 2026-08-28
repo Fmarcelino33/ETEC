@@ -58,7 +58,7 @@ h1 {
 }
 
 .descrição {
-  background-color: rgba(248, 243, 248, 0.9);
+  background-color: rgba(250, 249, 250, 0.9);
   padding: 30px;
   border-radius: 20px;
   box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.1);
@@ -71,7 +71,7 @@ h1 {
   font-style: bold;
   line-height: 1.6;
   margin-bottom: 20px;
-  color: #7f8c8d;
+  color: #242121;
   text-align: justify;
 }
 
@@ -86,7 +86,7 @@ th,
 td {
   padding: 12px;
   text-align: left;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #fffefe;
 }
 
 th {
@@ -133,12 +133,13 @@ input[type="submit"] {
 
 input[type="submit"] {
   transition: all linear 0.3s;
-  background-color: #3498db;
+  background-color: #0fdd08;
   color: #ecf0f1;
   cursor: pointer;
   font-weight: bold;
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(97, 182, 239);
+  background-color: rgb(9, 83, 22);
 }
+
