@@ -3,7 +3,7 @@
 
 const input = require('readline-sync');
 // Entrada de dados
-var valor = Number(prompt("Digite o valor do saque:"));
+var valor = input.questionInt("Digite o valor do saque:"));
 
 // VERIFICA MULTIPLO DE 10
 if (valor % 10 !== 0 || valor <= 0) {
