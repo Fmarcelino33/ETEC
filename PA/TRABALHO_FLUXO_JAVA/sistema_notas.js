@@ -1,9 +1,11 @@
 //SISTEMAS DE NOTOAS
+
+const input = require('readline-sync');
 // Entrada de dados
-var nome = prompt("Digite o nome do aluno:");
-var nota1 = Number(prompt("Digite a primeira nota:"));
-var nota2 = Number(prompt("Digite a segunda nota:"));
-var nota3 = Number(prompt("Digite a terceira nota:"));
+let nome = input.question("Digite o nome do aluno:");
+let nota1 = input.questionInt("Digite a primeira nota:");
+let nota2 = input.questionInt("Digite a segunda nota:");
+let nota3 = input.questionInt("Digite a terceira nota:")
 
 // Processamento
 var media = (nota1 + nota2 + nota3) / 3;
