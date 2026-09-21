@@ -1,4 +1,7 @@
 //CAIXA ELETRONICO
+
+
+const input = require('readline-sync');
 // Entrada de dados
 var valor = Number(prompt("Digite o valor do saque:"));
 
