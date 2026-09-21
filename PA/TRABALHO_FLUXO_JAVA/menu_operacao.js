@@ -1,4 +1,6 @@
 //MENU OPERACAO
+
+const input = require('readline-sync');
 // Exibe o menu e opcao escolhida
 var opcao = Number(prompt("MENU DE OPÇÕES:\n1: Aplicar 10% de desconto em um preço\n2: Calcular o dobro de um número\n\nEscolha uma opção (1 ou 2):"));
 
