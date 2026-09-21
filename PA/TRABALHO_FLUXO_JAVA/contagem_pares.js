@@ -1,4 +1,7 @@
 //CONTAGEM
+
+const input = require('readline-sync');
+
 var contador = 1;
 var pares = 0;
 
