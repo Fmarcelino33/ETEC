@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 4 - Ex7"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, temp" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <if expression="a &gt; b">
+                            <then>
+                                <assign variable="temp" expression="a"/>
+                                <assign variable="a" expression="b"/>
+                                <assign variable="b" expression="temp"/>
+                            </then>
+                            <else/>
+                        </if>
+            <if expression="b &gt; c">
+                            <then>
+                                <assign variable="temp" expression="b"/>
+                                <assign variable="b" expression="c"/>
+                                <assign variable="c" expression="temp"/>
+                            </then>
+                            <else/>
+                        </if>
+            <if expression="a &gt; b">
+                            <then>
+                                <assign variable="temp" expression="a"/>
+                                <assign variable="a" expression="b"/>
+                                <assign variable="b" expression="temp"/>
+                            </then>
+                            <else/>
+                        </if>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

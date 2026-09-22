@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 4 - Ex10"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, menor, maior, r1, r2, resultado" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a &lt; b">
+                            <then>
+                                <assign variable="menor" expression="a"/>
+                                <assign variable="maior" expression="b"/>
+                            </then>
+                            <else>
+                                <assign variable="menor" expression="b"/>
+                                <assign variable="maior" expression="a"/>
+                            </else>
+                        </if>
+            <assign variable="r1" expression="menor * 10"/>
+            <assign variable="r2" expression="maior / 2"/>
+            <assign variable="resultado" expression="r1 + r2"/>
+            <if expression="resultado MOD 2 == 0">
+                            <then>
+                                <output expression="&quot;O resultado e par&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;O resultado e impar&quot;" newline="True"/>
+                            </else>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 6 - Ex8"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, j" type="Real" array="False" size=""/>
+            <input variable="numero"/>
+            <while expression="numero &gt;= 5">
+                            <input variable="numero"/>
+                        </while>
+            <assign variable="j" expression="numero + 1"/>
+            <while expression="j &lt;= 19">
+                            <if expression="j MOD 2 == 0">
+                                            <then>
+                                                <output expression="j" newline="True"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                            <assign variable="j" expression="j + 1"/>
+                        </while>
+        </body>
+    </function>
+</flowgorithm>

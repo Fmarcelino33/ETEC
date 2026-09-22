@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 1 - Ex6"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, resultado1, resultado2, somaResultados, resultadoFinal" type="Real" array="False" size=""/>
+            <input variable="num1"/>
+            <assign variable="resultado1" expression="num1 - 3"/>
+            <input variable="num2"/>
+            <assign variable="resultado2" expression="num2 + 2"/>
+            <assign variable="somaResultados" expression="resultado1 + resultado2"/>
+            <assign variable="resultadoFinal" expression="somaResultados - 1"/>
+            <output expression="resultadoFinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

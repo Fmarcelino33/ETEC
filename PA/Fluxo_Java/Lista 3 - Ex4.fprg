@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 3 - Ex4"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, r1, r2, r3" type="Real" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <assign variable="r1" expression="num1 + 5"/>
+            <assign variable="r2" expression="num2 + 5"/>
+            <assign variable="r3" expression="num3 + 5"/>
+            <if expression="r1 &gt; 10">
+                            <then>
+                                <output expression="r1" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+            <if expression="r2 &gt; 10">
+                            <then>
+                                <output expression="r2" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+            <if expression="r3 &gt; 10">
+                            <then>
+                                <output expression="r3" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

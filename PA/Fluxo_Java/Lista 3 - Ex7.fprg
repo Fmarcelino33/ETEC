@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 3 - Ex7"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, resultado" type="Real" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <assign variable="resultado" expression="num1 + num2 + num3"/>
+            <if expression="resultado &gt; 20">
+                            <then>
+                                <output expression="resultado" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

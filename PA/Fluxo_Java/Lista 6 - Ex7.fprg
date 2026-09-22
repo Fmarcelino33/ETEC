@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 6 - Ex7"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Real" array="False" size=""/>
+            <input variable="num1"/>
+            <while expression="num1 &lt;= 10">
+                            <input variable="num1"/>
+                        </while>
+            <input variable="num2"/>
+            <while expression="num2 &gt;= 5">
+                            <input variable="num2"/>
+                        </while>
+            <output expression="num1" newline="True"/>
+            <output expression="num2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

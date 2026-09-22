@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 1 - Ex7"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, produto1, produto2, produto3, produto4, produto5, produto6, produto7, produto8, produto9, produto10" type="Real" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="produto1" expression="numero * 1"/>
+            <assign variable="produto2" expression="numero * 2"/>
+            <assign variable="produto3" expression="numero * 3"/>
+            <assign variable="produto4" expression="numero * 4"/>
+            <assign variable="produto5" expression="numero * 5"/>
+            <assign variable="produto6" expression="numero * 6"/>
+            <assign variable="produto7" expression="numero * 7"/>
+            <assign variable="produto8" expression="numero * 8"/>
+            <assign variable="produto9" expression="numero * 9"/>
+            <assign variable="produto10" expression="numero * 10"/>
+            <output expression="produto1" newline="True"/>
+            <output expression="produto2" newline="True"/>
+            <output expression="produto3" newline="True"/>
+            <output expression="produto4" newline="True"/>
+            <output expression="produto5" newline="True"/>
+            <output expression="produto6" newline="True"/>
+            <output expression="produto7" newline="True"/>
+            <output expression="produto8" newline="True"/>
+            <output expression="produto9" newline="True"/>
+            <output expression="produto10" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 3 - Ex9"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero, resultado" type="Real" array="False" size=""/>
+            <input variable="numero"/>
+            <assign variable="resultado" expression="numero / 2"/>
+            <if expression="resultado &gt; 20">
+                            <then>
+                                <output expression="resultado" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

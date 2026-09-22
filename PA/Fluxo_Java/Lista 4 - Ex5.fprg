@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 4 - Ex5"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, minimo, resultado" type="Real" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <assign variable="minimo" expression="num1"/>
+            <if expression="num2 &lt; minimo">
+                            <then>
+                                <assign variable="minimo" expression="num2"/>
+                            </then>
+                            <else/>
+                        </if>
+            <if expression="num3 &lt; minimo">
+                            <then>
+                                <assign variable="minimo" expression="num3"/>
+                            </then>
+                            <else/>
+                        </if>
+            <assign variable="resultado" expression="minimo + 5"/>
+            <output expression="resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

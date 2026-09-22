@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 4 - Ex2"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <if expression="a &lt; b">
+                            <then>
+                                <assign variable="a" expression="a + 5"/>
+                            </then>
+                            <else>
+                                <assign variable="b" expression="b + 5"/>
+                            </else>
+                        </if>
+            <if expression="a &gt; b">
+                            <then>
+                                <output expression="a" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="b" newline="True"/>
+                            </else>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Lista 1 - Ex8"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, num3, resultado1, resultado2, resultado3" type="Real" array="False" size=""/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <assign variable="resultado1" expression="num1 + 10"/>
+            <assign variable="resultado2" expression="num2 - 5"/>
+            <assign variable="resultado3" expression="num3 * 2"/>
+            <output expression="resultado1" newline="True"/>
+            <output expression="resultado2" newline="True"/>
+            <output expression="resultado3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
