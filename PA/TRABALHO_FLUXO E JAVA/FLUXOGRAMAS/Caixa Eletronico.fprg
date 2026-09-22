@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Caixa Eletronico"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valorOriginal, valor, notas100, notas50, notas20, notas10" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o valor do saque:&quot;" newline="True"/>
+            <input variable="valorOriginal"/>
+            <assign variable="valor" expression="valorOriginal"/>
+            <assign variable="notas100" expression="0"/>
+            <while expression="valor &gt;= 100">
+                            <assign variable="notas100" expression="notas100 + 1"/>
+                            <assign variable="valor" expression="valor - 100"/>
+                        </while>
+            <assign variable="notas50" expression="0"/>
+            <while expression="valor &gt;= 50">
+                            <assign variable="notas50" expression="notas50 + 1"/>
+                            <assign variable="valor" expression="valor - 50"/>
+                        </while>
+            <assign variable="notas20" expression="0"/>
+            <while expression="valor &gt;= 20">
+                            <assign variable="notas20" expression="notas20 + 1"/>
+                            <assign variable="valor" expression="valor - 20"/>
+                        </while>
+            <assign variable="notas10" expression="0"/>
+            <while expression="valor &gt;= 10">
+                            <assign variable="notas10" expression="notas10 + 1"/>
+                            <assign variable="valor" expression="valor - 10"/>
+                        </while>
+            <if expression="valorOriginal &lt;= 0">
+                            <then>
+                                <output expression="&quot;Saque nao pode ser realizado. Digite um valor multiplo de 10.&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="valor == 0">
+                                                <then>
+                                                    <output expression="&quot;NOTAS ENTREGUES:&quot;" newline="True"/>
+                                                    <if expression="notas100 &gt; 0">
+                                                                    <then>
+                                                                        <output expression="&quot;Notas de R$ 100: &quot; &amp; notas100" newline="True"/>
+                                                                    </then>
+                                                                    <else/>
+                                                                </if>
+                                                    <if expression="notas50 &gt; 0">
+                                                                    <then>
+                                                                        <output expression="&quot;Notas de R$ 50: &quot; &amp; notas50" newline="True"/>
+                                                                    </then>
+                                                                    <else/>
+                                                                </if>
+                                                    <if expression="notas20 &gt; 0">
+                                                                    <then>
+                                                                        <output expression="&quot;Notas de R$ 20: &quot; &amp; notas20" newline="True"/>
+                                                                    </then>
+                                                                    <else/>
+                                                                </if>
+                                                    <if expression="notas10 &gt; 0">
+                                                                    <then>
+                                                                        <output expression="&quot;Notas de R$ 10: &quot; &amp; notas10" newline="True"/>
+                                                                    </then>
+                                                                    <else/>
+                                                                </if>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Saque nao pode ser realizado. Digite um valor multiplo de 10.&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                            </else>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

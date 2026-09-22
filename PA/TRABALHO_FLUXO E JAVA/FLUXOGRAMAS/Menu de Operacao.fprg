@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Menu de Operacao"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opcao" type="Integer" array="False" size=""/>
+            <declare name="preco, numero, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;MENU DE OPCOES:&quot;" newline="True"/>
+            <output expression="&quot;1: Aplicar 10% de desconto em um preco&quot;" newline="True"/>
+            <output expression="&quot;2: Calcular o dobro de um numero&quot;" newline="True"/>
+            <output expression="&quot;Escolha uma opcao (1 ou 2):&quot;" newline="True"/>
+            <input variable="opcao"/>
+            <if expression="opcao == 1">
+                            <then>
+                                <output expression="&quot;Digite o preco:&quot;" newline="True"/>
+                                <input variable="preco"/>
+                                <assign variable="resultado" expression="preco - (preco * 0.10)"/>
+                                <output expression="&quot;Preco com 10% de desconto: R$ &quot; &amp; resultado" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="opcao == 2">
+                                                <then>
+                                                    <output expression="&quot;Digite o numero:&quot;" newline="True"/>
+                                                    <input variable="numero"/>
+                                                    <assign variable="resultado" expression="numero * 2"/>
+                                                    <output expression="&quot;O dobro do numero e: &quot; &amp; resultado" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Opcao invalida!&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                            </else>
+                        </if>
+        </body>
+    </function>
+</flowgorithm>

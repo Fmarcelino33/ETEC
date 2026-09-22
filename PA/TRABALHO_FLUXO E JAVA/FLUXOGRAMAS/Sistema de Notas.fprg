@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Sistema de Notas"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome, situacao" type="String" array="False" size=""/>
+            <declare name="nota1, nota2, nota3" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o nome do aluno:&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Digite a nota 1:&quot;" newline="True"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a nota 2:&quot;" newline="True"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Digite a nota 3:&quot;" newline="True"/>
+            <input variable="nota3"/>
+            <assign variable="media" expression="(nota1 + nota2 + nota3) / 3"/>
+            <if expression="media &gt;= 7">
+                <then>
+                    <assign variable="situacao" expression="&quot;Aprovado&quot;"/>
+                </then>
+                <else>
+                    <if expression="media &gt;= 5">
+                        <then>
+                            <assign variable="situacao" expression="&quot;Recuperacao&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="situacao" expression="&quot;Reprovado&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;BOLETIM RESUMIDO&quot;" newline="True"/>
+            <output expression="&quot;Aluno: &quot; &amp; nome" newline="True"/>
+            <output expression="&quot;Notas: &quot; &amp; nota1 &amp; &quot;, &quot; &amp; nota2 &amp; &quot;, &quot; &amp; nota3" newline="True"/>
+            <output expression="&quot;Media: &quot; &amp; media" newline="True"/>
+            <output expression="&quot;Situacao: &quot; &amp; situacao" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Contagem"/>
+        <attribute name="authors" value="francisco"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value=""/>
+        <attribute name="created" value=""/>
+        <attribute name="edited" value=""/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="contador, pares, numero" type="Integer" array="False" size=""/>
+            <assign variable="contador" expression="1"/>
+            <assign variable="pares" expression="0"/>
+            <while expression="contador &lt;= 5">
+                <output expression="&quot;Digite o &quot; &amp; contador &amp; &quot;o numero inteiro:&quot;" newline="True"/>
+                <input variable="numero"/>
+                <if expression="numero MOD 2 == 0">
+                    <then>
+                        <assign variable="pares" expression="pares + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="contador" expression="contador + 1"/>
+            </while>
+            <output expression="&quot;Quantidade de numeros pares digitados: &quot; &amp; pares" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
