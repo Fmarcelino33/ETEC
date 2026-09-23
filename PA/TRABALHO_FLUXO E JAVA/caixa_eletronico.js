@@ -1,27 +1,26 @@
-//CAIXA ELETRONICO
-
-
+// CAIXA ELETRONICO
 const input = require('readline-sync');
+
 // Entrada de dados
-var valor = input.questionInt("Digite o valor do saque:"));
+var valor = input.questionInt("Digite o valor do saque:");
 
 // VERIFICA MULTIPLO DE 10
 if (valor % 10 !== 0 || valor <= 0) {
     console.log("Saque não pode ser realizado. Digite um valor múltiplo de 10.");
 } else {
-    // Calculando a quantidade de notas
-    var notas100 = Math.floor(valor / 100);
+    // Calculando a quantidade de notas usando operador bitwise (| 0)
+    var notas100 = (valor / 100) | 0;
     valor = valor % 100;
 
-    var notas50 = Math.floor(valor / 50);
+    var notas50 = (valor / 50) | 0;
     valor = valor % 50;
 
-    var notas20 = Math.floor(valor / 20);
+    var notas20 = (valor / 20) | 0;
     valor = valor % 20;
 
-    var notas10 = Math.floor(valor / 10);
+    var notas10 = (valor / 10) | 0;
 
-    // SaIda no console
+    // Saída no console
     console.log("NOTAS ENTREGUES:");
     if (notas100 > 0) {
         console.log("Notas de R$ 100: " + notas100);

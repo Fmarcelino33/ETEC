@@ -7,7 +7,7 @@ var pares = 0;
 
 
 while (contador <= 5) {
-    var numero = Number(prompt("Digite o " + contador + "º número inteiro:"));
+    var numero = input.questionInt("Digite o " + contador + "º número inteiro:");
 
     if (numero % 2 === 0) {
         pares = pares + 1;
