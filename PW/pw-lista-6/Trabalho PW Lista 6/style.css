@@ -1,0 +1,247 @@
+/* Reset Box Model Universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Fundo de Pacific Rim com os Jaegers em alta definição */
+  background: linear-gradient(rgba(15, 23, 42, 0.4), rgba(3, 242, 246, 0.2)),
+              url('./image/fundo\ tela.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f4f5f7;
+}
+
+/* Clearfix para conter floats */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Header e Menu estilo Sci-Fi / Jaeger */
+.header {
+  background-color: rgba(15, 23, 42, 0.95);
+  color: #38bdf8;
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 2px solid #0284c7;
+  box-shadow: 0 4px 20px rgba(56, 189, 248, 0.2);
+}
+
+.header h1 {
+  margin-bottom: 12px;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #f59e0b; /* Dourado Jaeger */
+  text-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.menu a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menu a:hover {
+  color: #38bdf8;
+  text-shadow: 0 0 8px #38bdf8;
+}
+
+/* Estrutura Principal */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+/* Secao da Galeria (70% da largura - Float Left) */
+.galeria {
+  width: 70%;
+  float: left;
+  background-color: rgba(15, 23, 42, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+}
+
+/* Tres Colunas Proporcionais (Float Left) */
+.coluna {
+  width: 31%;
+  float: left;
+  margin-right: 3.5%;
+}
+
+.coluna:last-child {
+  margin-right: 0;
+}
+
+/* 2. Box Model e Estética dos Cards dos Jaegers */
+.card-imagem {
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: #0f172a;
+  padding: 6px;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-imagem img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 3;
+  object-fit: contain;
+  display: block;
+  border-radius: 4px;
+  filter: brightness(0.9) contrast(1.1);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* 4. Interatividade Visual (Hover) e Legenda Neon */
+.legenda {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to top, rgba(2, 132, 199, 0.95), rgba(15, 23, 42, 0.85));
+  color: #ffffff;
+  padding: 12px 8px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-imagem:hover {
+  transform: scale(1.04);
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+}
+
+.card-imagem:hover img {
+  filter: brightness(1.1) contrast(1.2);
+}
+
+.card-imagem:hover .legenda {
+  opacity: 1;
+}
+
+/* 3. Barra Lateral (26% da largura - Float Right) */
+.sidebar {
+  width: 26%;
+  float: right;
+  background-color: rgba(30, 41, 59, 0.85);
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #f59e0b;
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.sidebar h3 {
+  margin-bottom: 12px;
+  color: #f59e0b;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(245, 158, 11, 0.4);
+  padding-bottom: 5px;
+}
+
+.sidebar ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.sidebar a {
+  color: #38bdf8;
+  text-decoration: none;
+  line-height: 2;
+  font-weight: 500;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #f59e0b;
+  padding-left: 4px;
+}
+
+.info-extra p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #94a3b8;
+}
+
+/* Rodapé */
+.footer {
+  background-color: rgba(15, 23, 42, 0.98);
+  color: #64748b;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  clear: both;
+  border-top: 1px solid #1e293b;
+}
+
+.footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #f59e0b;
+}
+
+/* Media Query para responsividade em dispositivos móveis */
+@media screen and (max-width: 768px) {
+  /* Remove o float e ajusta galeria e sidebar para ocuparem 100% */
+  .galeria,
+  .sidebar {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  /* As colunas dentro da galeria passam a ocupar a largura total */
+  .coluna {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  /* Ajusta o menu do topo para não quebrar texto */
+  .menu li {
+    display: inline-block;
+    margin: 5px 6px;
+  }
+
+  .menu a {
+    font-size: 0.8rem;
+  }
+}
