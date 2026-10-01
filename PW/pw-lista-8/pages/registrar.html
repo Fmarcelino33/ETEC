@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Craftsy | Registrar</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="header container">
+    <div class="header-esquerda">
+      <a href="../index.html"><img src="../assets/logo.png" alt="Logo Craftsy"></a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Smartphones</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Computadores</a></li>
+        </ul>
+      </nav>
+    </div>
+    <ul class="menu">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="registrar.html">Registrar</a></li>
+    </ul>
+  </header>
+
+  <!-- Formulário de registro -->
+  <main class="container">
+    <form class="formulario" action="#" method="post">
+      <h1>Registrar</h1>
+
+      <div class="campo">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" class="caixa-texto" placeholder="Seu nome aqui">
+        <p class="obrigatorio">Obrigatório.</p>
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" class="caixa-texto" placeholder="email@email.com">
+        <p class="obrigatorio">Obrigatório.</p>
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" class="caixa-texto" placeholder="senha">
+        <p class="obrigatorio">Obrigatório.</p>
+      </div>
+
+      <div class="campo">
+        <label for="pais" class="titulo-campo">País de nascimento</label>
+        <select id="pais" name="pais" class="caixa-selecao">
+          <option value="">Por favor, escolha um</option>
+          <option value="brasil">Brasil</option>
+          <option value="argentina">Argentina</option>
+          <option value="chile">Chile</option>
+          <option value="uruguai">Uruguai</option>
+          <option value="paraguai">Paraguai</option>
+        </select>
+        <p class="obrigatorio">Obrigatório.</p>
+      </div>
+
+      <div class="campo">
+        <p class="titulo-campo">Gênero</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino" class="opcao">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino" class="opcao">Feminino</label>
+        <input type="radio" id="nao-dizer" name="genero" value="nao-dizer">
+        <label for="nao-dizer" class="opcao">Prefiro não dizer</label>
+      </div>
+
+      <div class="campo">
+        <p class="titulo-campo">Hobbies</p>
+        <input type="checkbox" id="guitarra" name="hobbies" value="guitarra">
+        <label for="guitarra" class="opcao">Guitarra</label>
+        <input type="checkbox" id="futebol" name="hobbies" value="futebol">
+        <label for="futebol" class="opcao">Futebol</label>
+        <input type="checkbox" id="tenis" name="hobbies" value="tenis">
+        <label for="tenis" class="opcao">Tênis</label>
+        <input type="checkbox" id="programacao" name="hobbies" value="programacao">
+        <label for="programacao" class="opcao">Programação</label>
+      </div>
+
+      <div class="campo">
+        <label for="comentarios" class="titulo-campo">Comentários</label>
+        <textarea id="comentarios" name="comentarios" class="caixa-comentario"></textarea>
+      </div>
+
+      <div class="campo">
+        <input type="checkbox" id="termos" name="termos">
+        <label for="termos" class="opcao">Aceito os termos e condições.</label>
+      </div>
+
+      <p class="texto-botao">Botão enviar com tag 'input'</p>
+      <div class="campo">
+        <input type="submit" value="Registrar">
+        <input type="reset" value="Cancelar">
+      </div>
+
+      <p class="texto-botao">Botão enviar com tag 'button'</p>
+      <button type="submit" class="botao negrito">Registrar</button>
+      <button type="reset" class="botao negrito">Cancelar</button>
+    </form>
+  </main>
+
+</body>
+</html>
